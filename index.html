@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREMIUMSMART</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #141414;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #141414;
+            position: fixed;
+            width: calc(100% - 40px);
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #bff000;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+            text-align: center;
+        }
+        .navbar .menu a {
+            text-decoration: none;
+            color: #bfff00;
+            font-weight: bold;
+        }
+        .banner {
+            position: relative;
+            background-image: url('https://www.premiumsmart.pl/data/assets/logo/Przechwytywanie1.png');
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+            box-shadow: inset 0 -100px 100px -10px rgba(0, 0, 0, 0.7);
+            margin-top: 70px;
+        }
+        .banner .title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">PREMIUMSMART</div>
+        <div class="menu">
+            <a href="https://www.premiumsmart.pl/index.php">Forum</a>
+            <a href="https://premiumsmart.github.io/tv/">Telewizja Online</a>
+			<a href="https://premiumsmart.github.io/radio2/">Radio</a>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="title"></div>
+    </div>
+</body>
+</html>
