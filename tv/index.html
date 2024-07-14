@@ -59,6 +59,9 @@
 		<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/deejay.html', 'DEEJAY TV')"><img src="https://seeklogo.com/images/R/Radio_Deejay-logo-B912D17BCC-seeklogo.com.png" class="chi "/><span class="ch">DEEJAY TV</span></span>
 		<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/qmusic.html', 'Q MUSIC')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Qmusic_logo.svg/1200px-Qmusic_logo.svg.png" class="chi "/><span class="ch">Q MUSIC</span></span>
 		<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/deluxemusic.html', 'Deluxe Music')"><img src="https://upload.wikimedia.org/wikipedia/commons/2/26/DELUXE_MUSIC_Logo_2019.png" class="chi "/><span class="ch">Deluxe Music</span></span></div>
+	<span class="chl" onclick="toggle720p()"><img src="https://e1.pngegg.com/pngimages/873/492/png-clipart-video-formats-icon-720p.png" class="chi"/><span class="ch">720p</span></span>
+    <div id="720pChannels" style="display: none; padding-left: 20px;">
+		<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/discovery720.html', 'Discovery 720')"><img src="https://1000logos.net/wp-content/uploads/2021/05/Discovery-logo.png" class="chi "/><span class="ch">Discovery 720</span></span></div>
   </div>
   <div id="stream">
     Wciśnij dowolny kanał na liście po lewej stronie ekranu, aby rozpocząć oglądanie telewizji.
@@ -141,6 +144,15 @@ function toggleMuzyka() {
                 muzyka.style.display = "block";
             } else {
                 muzyka.style.display = "none";
+            }
+}
+
+function toggle720p() {
+            var 720p = document.getElementById("720pChannels");
+            if (720p.style.display === "none") {
+                720p.style.display = "block";
+            } else {
+                720p.style.display = "none";
             }
 }
 
