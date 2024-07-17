@@ -23,6 +23,16 @@
 	<span class="chl" onclick="loadStream('https://premiumsmart.github.io/radio/vox.html', 'VOX FM')"><img src="https://i.imgur.com/mCx9a7G.png" class="chi "/><span class="ch">VOX FM</span></span>
 	<span class="chl" onclick="loadStream('https://premiumsmart.github.io/radio/waszeradio.html', 'WASZE RADIO FM')"><img src="https://i.imgur.com/LS9i5ps.png" class="chi "/><span class="ch">WASZE RADIO FM</span></span>
 	<span class="chl" onclick="loadStream('https://premiumsmart.github.io/radio/zet.html', 'RADIO ZET')"><img src="https://i.imgur.com/ECfXCTr.jpeg" class="chi "/><span class="ch">RADIO ZET</span></span>
+	
+			<span class="chl" onclick="togglePorn()"><img src="https://i.imgur.com/JwHqoul.png" class="chi"/><span class="ch">18+ Kanały</span></span>
+			<div id="PornChannels" style="display: none; padding-left: 20px;">
+			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/brazzers.html', 'Brazzers TV')"><img src="https://i.imgur.com/WS11J0C.jpeg" class="chi "/><span class="ch">Brazzers TV</span></span>
+			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/milf.html', 'AdultIPTV.net MILF')"><img src="https://i.imgur.com/JwHqoul.png" class="chi "/><span class="ch">AdultIPTV.net MILF</span></span>
+			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/blonde.html', 'AdultIPTV.net BLONDE')"><img src="https://i.imgur.com/JwHqoul.png" class="chi "/><span class="ch">AdultIPTV.net BLONDE</span></span>
+			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/teen.html', 'AdultIPTV.net TEEN')"><img src="https://i.imgur.com/JwHqoul.png" class="chi "/><span class="ch">AdultIPTV.net TEEN</span></span>
+			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/brunette.html', 'AdultIPTV.net BRUNETTE')"><img src="https://i.imgur.com/JwHqoul.png" class="chi "/><span class="ch">AdultIPTV.net BRUNETTE</span></span>
+			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/redlight.html', 'REDLIGHT HD')"><img src="https://i.imgur.com/JwHqoul.png" class="chi "/><span class="ch">REDLIGHT HD</span></span>
+			</div>
   </div>
   <div id="stream">
     Wciśnij dowolny kanał na liście po lewej stronie ekranu, aby rozpocząć odtwarzanie radia.
@@ -54,48 +64,12 @@
             tvp3.style.display = tvp3.style.display === "none" ? "block" : "none";
         }
 
-function toggleCanal() {
-            var canal = document.getElementById("CanalChannels");
-            if (canal.style.display === "none") {
-                canal.style.display = "block";
+function togglePorn() {
+            var porn = document.getElementById("PornChannels");
+            if (porn.style.display === "none") {
+                porn.style.display = "block";
             } else {
-                canal.style.display = "none";
-            }
-}
-
-function togglePolsat() {
-            var polsat = document.getElementById("PolsatChannels");
-            if (polsat.style.display === "none") {
-                polsat.style.display = "block";
-            } else {
-                polsat.style.display = "none";
-            }
-}
-
-function toggleEleven() {
-            var eleven = document.getElementById("ElevenChannels");
-            if (eleven.style.display === "none") {
-                eleven.style.display = "block";
-            } else {
-                eleven.style.display = "none";
-            }
-}
-
-function toggleEuro() {
-            var euro = document.getElementById("EuroChannels");
-            if (euro.style.display === "none") {
-                euro.style.display = "block";
-            } else {
-                euro.style.display = "none";
-            }
-}
-
-function toggleCinemax() {
-            var cinemax = document.getElementById("CinemaxChannels");
-            if (cinemax.style.display === "none") {
-                cinemax.style.display = "block";
-            } else {
-                cinemax.style.display = "none";
+                porn.style.display = "none";
             }
 }
 
