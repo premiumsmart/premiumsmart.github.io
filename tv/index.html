@@ -240,6 +240,9 @@ document.onkeydown = function(e) {
         border-radius: 32px;
         overflow-y: scroll;
     }
+	.video-js.vjs-fullscreen {
+            border-radius: 0 !important; /* Brak zaokrąglonych rogów w trybie pełnoekranowym */
+        }
         #channels {
             order: -1; /* Move channels to the left */
         }
