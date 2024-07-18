@@ -17,10 +17,6 @@
         .video-js {
             width: 100% !important;
             height: 100% !important;
-            border-radius: 10px; /* Zaokrąglone rogi w trybie normalnym */
-        }
-        .video-js.vjs-fullscreen {
-            border-radius: 0 !important; /* Brak zaokrąglonych rogów w trybie pełnoekranowym */
         }
         .vjs-custom-controls .vjs-control-bar {
             background: rgba(0, 0, 0, 0.3); /* Transparent background */
@@ -70,14 +66,7 @@
             z-index: 9999;
             display: none;
         }
-        .custom-loading .spinner {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            border: 3px solid rgba(255, 255, 255, 0.7);
-            border-top-color: #ffffff;
-            animation: spin 1s linear infinite;
-        }
+
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
