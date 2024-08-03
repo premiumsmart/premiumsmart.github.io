@@ -44,9 +44,13 @@
 			<span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-73.php', 'CANAL+ SPORT 2')"><img src="https://i.imgur.com/HscPBkD.jpeg" class="chi "/><span class="ch">Sport 2</span></span>
 			<span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-75.php', 'CANAL+ SPORT 5')"><img src="https://i.imgur.com/HscPBkD.jpeg" class="chi "/><span class="ch">Sport 5</span></span>
 			<span class="chl" onclick="loadStream('https://dlhd.sx/embed/stream-71.php', 'ELEVEN SPORTS 1')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 1</span></span>
+			<span class="chl" onclick="loadStream2('https://embedsportek1.online/embedplayer/PL/e1hd.php', 'ELEVEN SPORTS 1 (2)')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 1 (2)</span></span>
 			<span class="chl" onclick="loadStream('https://dlhd.sx/embed/stream-72.php', 'ELEVEN SPORTS 2')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 2</span></span>
 			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/elevensports2.html', 'ELEVEN SPORTS 2 (2)')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 2 (2)</span></span>
+			<span class="chl" onclick="loadStream2('https://embedsportek1.online/embedplayer/PL/e2hd.php', 'ELEVEN SPORTS 2 (3)')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 2 (3)</span></span>
 			<span class="chl" onclick="loadStream('https://dlhd.sx/embed/stream-428.php', 'ELEVEN SPORTS 3')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 3</span></span>
+			<span class="chl" onclick="loadStream2('https://embedsportek1.online/embedplayer/PL/e3hd.php', 'ELEVEN SPORTS 3 (2)')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 3 (2)</span></span>
+			<span class="chl" onclick="loadStream2('https://embedsportek1.online/embedplayer/PL/e4hd.php', 'ELEVEN SPORTS 4')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 4</span></span>
 			<span class="chl" onclick="loadStream('https://dlhd.sx/embed/stream-57.php', 'EuroSport 1')"><img src="https://i.imgur.com/trCCUqX.jpeg" class="chi "/><span class="ch">EuroSport 1</span></span>
             <span class="chl" onclick="loadStream('https://dlhd.sx/embed/stream-58.php', 'EuroSport 2')"><img src="https://i.imgur.com/trCCUqX.jpeg" class="chi "/><span class="ch">EuroSport 2</span></span>
 			</div>
@@ -117,6 +121,11 @@
         function loadStream(url, channelName) {
             const videoWrapper = document.getElementById('stream');
             videoWrapper.innerHTML = `<iframe id="videoPlayer" src="${url}" allowfullscreen="yes" frameborder="0"></>`;
+        }
+		
+		function loadStream2(url, channelName) {
+            const videoWrapper = document.getElementById('stream');
+            videoWrapper.innerHTML = `<iframe id="videoPlayer" src="${url}" allowfullscreen="yes" frameborder="0" allow="encrypted-media"></>`;
         }
 				
 
