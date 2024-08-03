@@ -109,7 +109,10 @@
     text-align: center;
 }
 
-
+	p {
+	text-align: center;
+	color: #bfff00;
+	}
 
 </style>
 
@@ -123,6 +126,17 @@ document.onkeydown = function(e) {
         }
 };
 </script>
+
+<div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
+<script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+<script>
+    aclib.runPop({
+        zoneId: "3558843",
+        sub1: "GEN",
+        targetElementsCssSelector: "#adz1",
+        triggerOnTargetElementsClick: false
+    });
+</script></div>
 	
 </head>
 <body>
@@ -166,53 +180,15 @@ document.onkeydown = function(e) {
 
 <hr>
 	
-	
-<div class="videoWrapper">
-	<iframe id="player" type="text/html" width="100%" height="800px" src="https://www.youtube.com/embed/Bk32_p-e0YE?autoplay=1&mute=1&disablekb=1&enablejsapi=1&modestbranding=1&iv_load_policy=3" frameborder="0" allowfullscreen>
+<h1 class="entry-title" itemprop="headline">LIVE STREAM</h1> </header>
+<div class="entry-content" itemprop="text">
+<p><iframe src="https://wikisport.se/fsl/mma02.php" width="50%" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen></iframe></p>
+<div class="code-block code-block-10" style="margin: 8px 0; clear: both;">
+<div id="adz1"><script data-cfasync="false" async type="text/javascript" src="//humoralpurline.com/tZdQRQec14bZncj8z/67050"></script></div>
 </div>
+		
 
-<script>
-         // 2. This code loads the IFrame Player API code asynchronously.
-         var tag = document.createElement('script');
 
-         tag.src = "https://www.youtube.com/iframe_api";
-         var firstScriptTag = document.getElementsByTagName('script')[0];
-         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-         // 3. This function creates an <iframe> (and YouTube player)
-         //    after the API code downloads.
-         var player;
-         function onYouTubeIframeAPIReady() {
-             player = new YT.Player('player', {
-                 height: '390',
-                 width: '640',
-                 videoId: 'Bk32_p-e0YE',
-                 events: {
-                     'onReady': onPlayerReady,
-                     'onStateChange': onPlayerStateChange
-                 }
-             });
-         }
-
-         // 4. The API will call this function when the video player is ready.
-         function onPlayerReady(event) {
-             event.target.playVideo();
-         }
-
-         // 5. The API calls this function when the player's state changes.
-         //    The function indicates that when playing a video (state=1),
-         //    the player should play for six seconds and then stop.
-         var done = false;
-         function onPlayerStateChange(event) {
-             if (event.data == YT.PlayerState.PLAYING && !done) {
-                 setTimeout(stopVideo, 6000);
-                 done = true;
-             }
-         }
-         function stopVideo() {
-             player.stopVideo();
-         }
-        </script>
-	
+		
 </body>
 </html>
