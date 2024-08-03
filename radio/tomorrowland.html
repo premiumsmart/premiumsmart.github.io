@@ -99,6 +99,18 @@
         }
 
     </style>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" language="javascript"> $(function () { $(this).bind("contextmenu", function (e) { e.preventDefault(); }); }); </script>
+   <script>
+document.onkeydown = function(e) {
+        if (e.ctrlKey &&
+            (e.keyCode === 85 )) {
+            return false;
+        }
+};
+</script>
+
 </head>
 <body>
     <div id="loading-spinner" class="custom-loading">
@@ -106,7 +118,7 @@
     </div>
 
     <video id="my-video" class="video-js vjs-default-skin vjs-custom-controls" autoplay muted controls preload="auto">
-        <source src="http://playerservices.streamtheworld.com/api/livestream-redirect/OWR_INTERNATIONAL.mp3" type="audio/mpeg">
+        <source src="http://playerservices.streamtheworld.com/api/livestream-redirect/OWR_INTERNATIONAL_ADP.m3u8" type="application/x-mpegURL">
     </video>
 
     <script src="https://vjs.zencdn.net/7.11.4/video.js"></script>

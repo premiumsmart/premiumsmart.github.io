@@ -34,15 +34,17 @@
 		<span class="chl" onclick="toggleSport()"><img src="https://i.imgur.com/hJiSC1P.jpeg" class="chi"/><span class="ch">Sportowe Kanały</span></span>
 		<div id="SportChannels" style="display: none; padding-left: 20px;">
 			<span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-128.php', 'TVP Sport')"><img src="https://i.imgur.com/cLFzKZK.png" class="chi "/><span class="ch">TVP Sport</span></span>
-			<span class="chl" onclick="loadStream('https://s2watch.link/player.php?id=ch61', 'TVP SPORT (Stream 2)')"><img src="https://i.imgur.com/cLFzKZK.png" class="chi "/><span class="ch">TVP SPORT (2)</span></span>
+			<span class="chl" onclick="loadStream('https://strims.in//live/r4w.php', 'TVP SPORT (Stream 2)')"><img src="https://i.imgur.com/cLFzKZK.png" class="chi "/><span class="ch">TVP SPORT (2)</span></span>
 			<span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-47.php', 'POLSAT SPORT 1 HD')"><img src="https://i.imgur.com/Z6QpkJK.jpeg" class="chi "/><span class="ch">Polsat Sport 1</span></span>
 			<span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-50.php', 'POLSAT SPORT 2 HD')"><img src="https://i.imgur.com/Z6QpkJK.jpeg" class="chi "/><span class="ch">Polsat Sport 2</span></span>
 			<span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-129.php', 'POLSAT SPORT 3 HD')"><img src="https://i.imgur.com/Z6QpkJK.jpeg" class="chi "/><span class="ch">Polsat Sport 3</span></span>
+			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/polsatsport3.html', 'POLSAT SPORT 3 HD (2)')"><img src="https://i.imgur.com/Z6QpkJK.jpeg" class="chi "/><span class="ch">Polsat Sport 3 (2)</span></span>
 			<span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-48.php', 'CANAL+ SPORT 1')"><img src="https://i.imgur.com/HscPBkD.jpeg" class="chi "/><span class="ch">Sport 1</span></span>
 			<span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-73.php', 'CANAL+ SPORT 2')"><img src="https://i.imgur.com/HscPBkD.jpeg" class="chi "/><span class="ch">Sport 2</span></span>
 			<span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-75.php', 'CANAL+ SPORT 5')"><img src="https://i.imgur.com/HscPBkD.jpeg" class="chi "/><span class="ch">Sport 5</span></span>
 			<span class="chl" onclick="loadStream('https://dlhd.sx/embed/stream-71.php', 'ELEVEN SPORTS 1')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 1</span></span>
 			<span class="chl" onclick="loadStream('https://dlhd.sx/embed/stream-72.php', 'ELEVEN SPORTS 2')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 2</span></span>
+			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/elevensports2.html', 'ELEVEN SPORTS 2 (2)')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 2 (2)</span></span>
 			<span class="chl" onclick="loadStream('https://dlhd.sx/embed/stream-428.php', 'ELEVEN SPORTS 3')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 3</span></span>
 			<span class="chl" onclick="loadStream('https://dlhd.sx/embed/stream-57.php', 'EuroSport 1')"><img src="https://i.imgur.com/trCCUqX.jpeg" class="chi "/><span class="ch">EuroSport 1</span></span>
             <span class="chl" onclick="loadStream('https://dlhd.sx/embed/stream-58.php', 'EuroSport 2')"><img src="https://i.imgur.com/trCCUqX.jpeg" class="chi "/><span class="ch">EuroSport 2</span></span>
@@ -81,7 +83,9 @@
 		<span class="chl" onclick="togglehdd()"><img src="https://e1.pngegg.com/pngimages/873/492/png-clipart-video-formats-icon-720p.png" class="chi"/><span class="ch">720p Kanały</span></span>
 		<div id="hddChannels" style="display: none; padding-left: 20px;">
 			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/discovery720.html', 'Discovery')"><img src="https://1000logos.net/wp-content/uploads/2021/05/Discovery-logo.png" class="chi "/><span class="ch">Discovery</span></span>
-			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/dtx720.html', 'DTX')"><img src="https://i.imgur.com/nL0BOsn.png" class="chi "/><span class="ch">DTX</span></span></div>
+			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/dtx720.html', 'DTX')"><img src="https://i.imgur.com/nL0BOsn.png" class="chi "/><span class="ch">DTX</span></span>
+			<span class="chl" onclick="loadStream('https://player.kick.com/franio', 'FRANIO')"><img src="https://next.kick.com/img/kick-logo.svg" class="chi "/><span class="ch">FRANIO</span></span>
+			<span class="chl" onclick="loadStream('https://player.kick.com/japczan', 'JAPCZAN')"><img src="https://next.kick.com/img/kick-logo.svg" class="chi "/><span class="ch">JAPCZAN</span></span></div>
 		
 
   </div>
@@ -109,6 +113,7 @@
             const videoWrapper = document.getElementById('stream');
             videoWrapper.innerHTML = `<iframe id="videoPlayer" src="${url}" allowfullscreen="yes" frameborder="0"></>`;
         }
+				
 
         function toggleTVP3() {
             const tvp3 = document.getElementById("tvp3Channels");
@@ -189,6 +194,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
 </script>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript" language="javascript"> $(function () { $(this).bind("contextmenu", function (e) { e.preventDefault(); }); }); </script>
