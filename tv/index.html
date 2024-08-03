@@ -83,9 +83,13 @@
 		<span class="chl" onclick="togglehdd()"><img src="https://e1.pngegg.com/pngimages/873/492/png-clipart-video-formats-icon-720p.png" class="chi"/><span class="ch">720p Kanały</span></span>
 		<div id="hddChannels" style="display: none; padding-left: 20px;">
 			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/discovery720.html', 'Discovery')"><img src="https://1000logos.net/wp-content/uploads/2021/05/Discovery-logo.png" class="chi "/><span class="ch">Discovery</span></span>
-			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/dtx720.html', 'DTX')"><img src="https://i.imgur.com/nL0BOsn.png" class="chi "/><span class="ch">DTX</span></span>
+			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/dtx720.html', 'DTX')"><img src="https://i.imgur.com/nL0BOsn.png" class="chi "/><span class="ch">DTX</span></span></div>
+		
+		<span class="chl" onclick="toggletwitch()"><img src="https://i.imgur.com/CTZiDvd.jpeg" class="chi"/><span class="ch">TEST</span></span>
+		<div id="twitchChannels" style="display: none; padding-left: 20px;">
 			<span class="chl" onclick="loadStream('https://player.kick.com/franio', 'FRANIO')"><img src="https://i.imgur.com/CTZiDvd.jpeg" class="chi "/><span class="ch">FRANIO</span></span>
-			<span class="chl" onclick="loadStream('https://player.kick.com/japczan', 'JAPCZAN')"><img src="https://i.imgur.com/CTZiDvd.jpeg" class="chi "/><span class="ch">JAPCZAN</span></span></div>
+			<span class="chl" onclick="loadStream('https://player.kick.com/japczan', 'JAPCZAN')"><img src="https://i.imgur.com/CTZiDvd.jpeg" class="chi "/><span class="ch">JAPCZAN</span></span>
+			<span class="chl" onclick="loadStream('https://player.twitch.tv/?channel=neexcsgo&parent=localhost', 'NEEX')"><img src="https://i.imgur.com/CTZiDvd.jpeg" class="chi "/><span class="ch">NEEX</span></span></div>
 		
 
   </div>
@@ -171,6 +175,15 @@ function togglehdd() {
                 hdd.style.display = "block";
             } else {
                 hdd.style.display = "none";
+            }
+}
+
+function toggletwitch() {
+            var twitch = document.getElementById("twitchChannels");
+            if (twitch.style.display === "none") {
+                twitch.style.display = "block";
+            } else {
+                twitch.style.display = "none";
             }
 }
 
