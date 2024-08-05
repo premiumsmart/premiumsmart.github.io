@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-<meta http-equiv="Content-Security-Policy" content="frame-ancestors https://lestlim.xyz https://strims.top https://strims.in https://premiumsmart.github.io https://embedsportek1.online;">
-</head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
@@ -36,11 +33,15 @@
 			<span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-452.php', 'TVP INFO')"><img src="https://i.imgur.com/QISN5aV.jpeg" class="chi "/><span class="ch">TVP Info (Stream 2)</span></span>
 			</div>
 			
-		<span class="chl" onclick="toggleSport()"><img src="https://i.imgur.com/hJiSC1P.jpeg" class="chi"/><span class="ch">Sportowe Kanały</span></span>
+		<span class="chl" onclick="toggleSport()"><img src="https://i.imgur.com/cLFzKZK.png" class="chi"/><span class="ch">TVP Sport Kanały</span></span>
 		<div id="SportChannels" style="display: none; padding-left: 20px;">
 			<span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-128.php', 'TVP Sport')"><img src="https://i.imgur.com/cLFzKZK.png" class="chi "/><span class="ch">TVP Sport</span></span>
 			<span class="chl" onclick="loadStream('https://s2watch.link/player.php?id=ch61', 'TVP SPORT (2)')"><img src="https://i.imgur.com/cLFzKZK.png" class="chi "/><span class="ch">TVP SPORT (2)</span></span>
-			<span class="chl" onclick="loadStream2('https://premiumsmart.github.io/tv/live/tvpsport.php', 'TVP SPORT (3)')"><img src="https://i.imgur.com/cLFzKZK.png" class="chi "/><span class="ch">TVP SPORT (3)</span></span>
+			<span class="chl" onclick="loadStream('https://strims.in/live/r10w.php', 'TVP SPORT (3)')"><img src="https://i.imgur.com/cLFzKZK.png" class="chi "/><span class="ch">TVP SPORT (3)</span></span>
+			</div>
+			
+		<span class="chl" onclick="togglePolsat()"><img src="https://i.imgur.com/Z6QpkJK.jpeg" class="chi"/><span class="ch">Polsat Sport Kanały</span></span>
+		<div id="PolsatChannels" style="display: none; padding-left: 20px;">
 			<span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-47.php', 'POLSAT SPORT 1 HD')"><img src="https://i.imgur.com/Z6QpkJK.jpeg" class="chi "/><span class="ch">Polsat Sport 1</span></span>
 			<span class="chl" onclick="loadStream('https://embedsportek1.online/embedplayer/PL/pshd.php', 'POLSAT SPORT 1 HD (2)')"><img src="https://i.imgur.com/Z6QpkJK.jpeg" class="chi "/><span class="ch">Polsat Sport 1 (2)</span></span>
 			<span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-50.php', 'POLSAT SPORT 2 HD')"><img src="https://i.imgur.com/Z6QpkJK.jpeg" class="chi "/><span class="ch">Polsat Sport 2</span></span>
@@ -50,24 +51,39 @@
 			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/polsatsport3.html', 'POLSAT SPORT 3 HD (3)')"><img src="https://i.imgur.com/Z6QpkJK.jpeg" class="chi "/><span class="ch">Polsat Sport 3 (3)</span></span>
 			<span class="chl" onclick="loadStream('https://embedsportek1.online/embedplayer/PL/psp1hd.php', 'POLSAT SPORT PREMIUM 1 HD')"><img src="https://i.imgur.com/Z6QpkJK.jpeg" class="chi "/><span class="ch">Polsat Sport Premium 1</span></span>
 			<span class="chl" onclick="loadStream('https://embedsportek1.online/embedplayer/PL/psp2hd.php', 'POLSAT SPORT PREMIUM 2 HD')"><img src="https://i.imgur.com/Z6QpkJK.jpeg" class="chi "/><span class="ch">Polsat Sport Premium 2</span></span>
+			</div>
+			
+		<span class="chl" onclick="toggleCanal()"><img src="https://i.imgur.com/HscPBkD.jpeg" class="chi"/><span class="ch">CANAL+ Sport Kanały</span></span>
+		<div id="CanalChannels" style="display: none; padding-left: 20px;">
 			<span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-48.php', 'CANAL+ SPORT 1')"><img src="https://i.imgur.com/HscPBkD.jpeg" class="chi "/><span class="ch">C+ Sport 1</span></span>
 			<span class="chl" onclick="loadStream('https://embedsportek1.online/embedplayer/PL/cshd.php', 'CANAL+ SPORT 1 (2)')"><img src="https://i.imgur.com/HscPBkD.jpeg" class="chi "/><span class="ch">C+ Sport 1 (2)</span></span>
 			<span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-73.php', 'CANAL+ SPORT 2')"><img src="https://i.imgur.com/HscPBkD.jpeg" class="chi "/><span class="ch">C+ Sport 2</span></span>
 			<span class="chl" onclick="loadStream('https://embedsportek1.online/embedplayer/PL/cs2hd.php', 'CANAL+ SPORT 2 (2)')"><img src="https://i.imgur.com/HscPBkD.jpeg" class="chi "/><span class="ch">C+ Sport 2 (2)</span></span>
 			<span class="chl" onclick="loadStream('https://embedsportek1.online/embedplayer/PL/cs3hd.php', 'CANAL+ SPORT 3')"><img src="https://i.imgur.com/HscPBkD.jpeg" class="chi "/><span class="ch">C+ Sport 3</span></span>
+			<span class="chl" onclick="loadStream('https://voodc.com/embed/858a9389a18c879587998387928d988b85.html', 'CANAL+ SPORT 3 (2)')"><img src="https://i.imgur.com/HscPBkD.jpeg" class="chi "/><span class="ch">C+ Sport 3 (2)</span></span>
 			<span class="chl" onclick="loadStream('https://embedsportek1.online/embedplayer/PL/cs4hd.php', 'CANAL+ SPORT 4')"><img src="https://i.imgur.com/HscPBkD.jpeg" class="chi "/><span class="ch">C+ Sport 4</span></span>
 			<span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-75.php', 'CANAL+ SPORT 5')"><img src="https://i.imgur.com/HscPBkD.jpeg" class="chi "/><span class="ch">C+ Sport 5</span></span>
 			<span class="chl" onclick="loadStream('https://embedsportek1.online/embedplayer/PL/cs5hd.php', 'CANAL+ SPORT 5 (2)')"><img src="https://i.imgur.com/HscPBkD.jpeg" class="chi "/><span class="ch">C+ Sport 5 (2)</span></span>
+			</div>
+			
+		<span class="chl" onclick="toggleEleven()"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi"/><span class="ch">Eleven Kanały</span></span>
+		<div id="ElevenChannels" style="display: none; padding-left: 20px;">
 			<span class="chl" onclick="loadStream('https://dlhd.sx/embed/stream-71.php', 'ELEVEN SPORTS 1')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 1</span></span>
 			<span class="chl" onclick="loadStream('https://embedsportek1.online/embedplayer/PL/e1hd.php', 'ELEVEN SPORTS 1 (2)')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 1 (2)</span></span>
+			<span class="chl" onclick="loadStream('https://voodc.com/embed/858a9389a18c879587998387958e988a8a.html', 'ELEVEN SPORTS 1 (3)')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 1 (3)</span></span>
 			<span class="chl" onclick="loadStream('https://dlhd.sx/embed/stream-72.php', 'ELEVEN SPORTS 2')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 2</span></span>
 			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/elevensports2.html', 'ELEVEN SPORTS 2 (2)')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 2 (2)</span></span>
 			<span class="chl" onclick="loadStream('https://embedsportek1.online/embedplayer/PL/e2hd.php', 'ELEVEN SPORTS 2 (3)')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 2 (3)</span></span>
 			<span class="chl" onclick="loadStream('https://dlhd.sx/embed/stream-428.php', 'ELEVEN SPORTS 3')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 3</span></span>
 			<span class="chl" onclick="loadStream('https://embedsportek1.online/embedplayer/PL/e3hd.php', 'ELEVEN SPORTS 3 (2)')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 3 (2)</span></span>
 			<span class="chl" onclick="loadStream('https://embedsportek1.online/embedplayer/PL/e4hd.php', 'ELEVEN SPORTS 4')"><img src="https://i.imgur.com/pTVoupp.jpeg" class="chi "/><span class="ch">Eleven Sport 4</span></span>
+			</div>
+			
+		<span class="chl" onclick="toggleEurosport()"><img src="https://i.imgur.com/trCCUqX.jpeg" class="chi"/><span class="ch">Eurosport Kanały</span></span>
+		<div id="EurosportChannels" style="display: none; padding-left: 20px;">
 			<span class="chl" onclick="loadStream('https://dlhd.sx/embed/stream-57.php', 'EuroSport 1')"><img src="https://i.imgur.com/trCCUqX.jpeg" class="chi "/><span class="ch">EuroSport 1</span></span>
 			<span class="chl" onclick="loadStream('https://embedsportek1.online/embedplayer/PL/es1hd.php', 'EuroSport 1 (2)')"><img src="https://i.imgur.com/trCCUqX.jpeg" class="chi "/><span class="ch">EuroSport 1 (2)</span></span>
+			<span class="chl" onclick="loadStream('https://voodc.com/embed/858a9389a18c8795879983879589988b89.html', 'EuroSport 1 (3)')"><img src="https://i.imgur.com/trCCUqX.jpeg" class="chi "/><span class="ch">EuroSport 1 (3)</span></span>
             <span class="chl" onclick="loadStream('https://dlhd.sx/embed/stream-58.php', 'EuroSport 2')"><img src="https://i.imgur.com/trCCUqX.jpeg" class="chi "/><span class="ch">EuroSport 2</span></span>
 			<span class="chl" onclick="loadStream('https://embedsportek1.online/embedplayer/PL/es2hd.php', 'EuroSport 2 (2)')"><img src="https://i.imgur.com/trCCUqX.jpeg" class="chi "/><span class="ch">EuroSport 2 (2)</span></span>
 			</div>
@@ -84,13 +100,13 @@
 			<span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-568.php', 'FILMBOX PREMIUM HD POLAND')"><img src="https://i.imgur.com/8yPk6jy.png" class="chi "/><span class="ch">FilmBox Premium</span></span>
 			</div>
 		
-		<span class="chl" onclick="toggleMoto()"><img src="https://i.imgur.com/Sgy96vq.jpeg" class="chi"/><span class="ch">Moto Kanały</span></span>
+		<span class="chl" onclick="toggleMoto()"><img src="https://i.imgur.com/fLe4vvY.jpeg" class="chi"/><span class="ch">Moto Kanały</span></span>
 		<div id="MotoChannels" style="display: none; padding-left: 20px;">
 			<span class="chl" onclick="loadStream('https://embedsportek1.online/embedplayer/PL/tvnturbohd.php', 'TVN TURBO')"><img src="https://i.imgur.com/FBMlqyQ.png" class="chi "/><span class="ch">TVN TURBO</span></span>
 			<span class="chl" onclick="loadStream('https://embedsportek1.online/embedplayer/PL/motowizjahd.php', 'Motowizja')"><img src="https://i.imgur.com/GRlXzuE.png" class="chi "/><span class="ch">MOTOWIZJA</span></span>
 			</div>
 			
-		<span class="chl" onclick="toggleMuzyka()"><img src="https://i.imgur.com/TnMvU4P.jpeg" class="chi"/><span class="ch">Muzyczne Kanały</span></span>
+		<span class="chl" onclick="toggleMuzyka()"><img src="https://i.imgur.com/Xd2HwSc.png" class="chi"/><span class="ch">Muzyczne Kanały</span></span>
 		<div id="MuzykaChannels" style="display: none; padding-left: 20px;">
 			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/deluxedance.html', 'Deluxe Dance')"><img src="https://i.imgur.com/wp759gQ.png" class="chi "/><span class="ch">Deluxe Dance</span></span>
 			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/deejay.html', 'DEEJAY TV')"><img src="https://seeklogo.com/images/R/Radio_Deejay-logo-B912D17BCC-seeklogo.com.png" class="chi "/><span class="ch">DEEJAY TV</span></span>
@@ -107,7 +123,7 @@
 			</div>
 		
 	
-		<span class="chl" onclick="togglehdd()"><img src="https://e1.pngegg.com/pngimages/873/492/png-clipart-video-formats-icon-720p.png" class="chi"/><span class="ch">720p Kanały</span></span>
+		<span class="chl" onclick="togglehdd()"><img src="https://i.imgur.com/7HpZBBT.jpeg" class="chi"/><span class="ch">Różne Kanały</span></span>
 		<div id="hddChannels" style="display: none; padding-left: 20px;">
 			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/discovery720.html', 'Discovery')"><img src="https://1000logos.net/wp-content/uploads/2021/05/Discovery-logo.png" class="chi "/><span class="ch">Discovery</span></span>
 			<span class="chl" onclick="loadStream('https://premiumsmart.github.io/stream/dtx720.html', 'DTX')"><img src="https://i.imgur.com/nL0BOsn.png" class="chi "/><span class="ch">DTX</span></span>
@@ -131,6 +147,10 @@
 <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
 <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
 <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+
+<script type="module" src="https://unpkg.com/x-frame-bypass"></script>
+<script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+
 <script>
         function loadYouTubeStream(videoId, channelName) {
             const videoWrapper = document.getElementById('stream');
@@ -164,6 +184,42 @@ function toggleSport() {
                 sport.style.display = "block";
             } else {
                 sport.style.display = "none";
+            }
+}
+
+function togglePolsat() {
+            var polsat = document.getElementById("PolsatChannels");
+            if (polsat.style.display === "none") {
+                polsat.style.display = "block";
+            } else {
+                polsat.style.display = "none";
+            }
+}
+
+function toggleCanal() {
+            var canal = document.getElementById("CanalChannels");
+            if (canal.style.display === "none") {
+                canal.style.display = "block";
+            } else {
+                canal.style.display = "none";
+            }
+}
+
+function toggleEleven() {
+            var eleven = document.getElementById("ElevenChannels");
+            if (eleven.style.display === "none") {
+                eleven.style.display = "block";
+            } else {
+                eleven.style.display = "none";
+            }
+}
+
+function toggleEurosport() {
+            var eurosport = document.getElementById("EurosportChannels");
+            if (eurosport.style.display === "none") {
+                eurosport.style.display = "block";
+            } else {
+                eurosport.style.display = "none";
             }
 }
 
